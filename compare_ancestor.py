@@ -2,7 +2,7 @@ from modeller import *
 
 env = environ()
 aln = alignment(env)
-for (pdb, chain) in (('1qvb', 'A'), ('3wdp', 'P'), ('4ha4', 'A'),
+for (pdb, chain) in (('7f1n', 'A'), ('3wdp', 'P'), ('4ha4', 'A'),
                      ('7uz1', 'A'), ('5i3d', 'C'),('1uwq','A')):
     m = model(env, file=pdb, model_segment=('FIRST:'+chain, 'LAST:'+chain))
     aln.append_model(m, atom_files=pdb, align_codes=pdb+chain)
