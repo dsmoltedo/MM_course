@@ -20,7 +20,7 @@ sdb.read(seq_database_file='pdb_95_ancestor.bin', seq_database_format='BINARY',
 
 #-- Read in the target sequence/alignment
 aln = alignment(env)
-aln.append(file='ancestor.fasta', alignment_format='FASTA', align_codes='ALL')
+aln.append(file='node9.fasta', alignment_format='FASTA', align_codes='ALL')
 
 #-- Convert the input sequence/alignment into
 #   profile format
