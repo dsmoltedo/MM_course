@@ -3,8 +3,8 @@ from modeller.automodel import *
 #from modeller import soap_protein_od
 
 env = environ()
-a = automodel(env, alnfile='aligned.ali',
-              knowns='6eqeA', sequence='target',
+a = automodel(env, alnfile='aligned_ancestor.ali',
+              knowns='1uwq', sequence='node9',
               assess_methods=(assess.DOPE,
                               #soap_protein_od.Scorer(),
                               assess.GA341))
