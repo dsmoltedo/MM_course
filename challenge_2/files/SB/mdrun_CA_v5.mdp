@@ -49,14 +49,14 @@ table-extension = 50 	; (nm) required if using abc
 ;Temperature coupling 
 tc-grps = system 
 tau_t = 1.0 		; Temp coupling time constant. Smaller values = stronger coupling 
-ref_t = 152.0 		; In reduced units. Many proteins fold at T=120-180 in CA model
+ref_t = 120.0 		; In reduced units. Many proteins fold at T=120-180 in CA model
 
 ;Pressure coupling 
 Pcoupl = no 		; There is no solvent, thus we do not require pressure
 
 ;Velocity generation 
 gen_vel = yes 		; Generate initial velocities based on a Maxwell distribution
-gen_temp = 152.0 	; Temp to generate initial velocities. Equals ref_t
+gen_temp = 120.0 	; Temp to generate initial velocities. Equals ref_t
 gen_seed = -1 		; Random seed for generation of initial velocities
 ld_seed = -1		; Random seed for langevin dynamics
 comm_mode = angular 	; Center of Mass velocity removal. Check if it is appropriate
